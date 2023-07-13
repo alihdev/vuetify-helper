@@ -1,5 +1,8 @@
 # show all the snackbars in a stack way (in a simple way)
 
+
+![snackbars-stack-way](snackbars-stack-way.gif "Card examples")
+
 ## store file
 
 ```ts
