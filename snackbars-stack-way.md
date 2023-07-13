@@ -47,7 +47,7 @@ export const useSnackbarStore = defineStore('snackbar', () => {
 
 ```ts
 <script setup lang="ts">
-import { useSnackbarStore } from '@/@dcruder/stores/useSnackbarStore'
+import { useSnackbarStore } from './useSnackbarStore'
 
 const store = useSnackbarStore()
 
@@ -64,7 +64,6 @@ const onChanged = (id: number, isShow: boolean) => !isShow && store.remove(id)
     location="bottom end"
     variant="flat"
     :color="snackbar.color"
-    class="snackbar"
     :style="{ bottom: `${snackbar.position}px` }"
     @update:model-value="onChanged(snackbar.id, $event)"
   >
